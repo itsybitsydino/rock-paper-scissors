@@ -51,6 +51,8 @@ function playGame() {
     console.log(`The final score is (player) ${playerScore} : ${computerScore} (computer).`)
     if (playerScore > computerScore) {
         console.log('Congratulations! You won the game.');
+    } else if (playerScore == computerScore) { 
+        console.log('It\'s okay. You tied the game.');
     } else {
         console.log('Too bad. You lost the game.');
     }
