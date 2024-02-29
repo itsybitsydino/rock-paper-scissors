@@ -15,12 +15,15 @@ function getComputerChoice() {
 }
 
 function getPlayerChoice() {
-    let choice = prompt('Choose your attack!', 'rock, paper, or scissors?').toLowerCase();
-        if (choice === 'rock' ||
-            choice === 'paper' ||
-            choice === 'scissors' ){
-            return choice;
-        } 
+    let choice = prompt('Choose your attack!');
+    choice = choice.toLowerCase();
+
+    while ((choice != 'rock') && 
+            (choice != 'paper') && 
+            (choice != 'scissors')) {
+        choice = prompt(`Incorrect input. \nEnter rock, paper, or scissors.`);
+    }
+    return choice;
 }
 
 function playRound(player, computer){
