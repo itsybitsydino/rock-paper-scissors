@@ -6,8 +6,9 @@ Play a game 'Rock, Paper, Scissors!' against the computer. Winner after five rou
 Asks user to type input 'rock', 'paper', or 'scissors' and input is compared with computer's randomly generated choice.
 Runs five rounds, stating the winner of each, then the winner at the end. 
 
+If the user does not input 'rock', 'paper', or 'scissors', it will ask for their choice again. 
+
 Runs in browser using the console log. 
 
 ## To Do
 - Expand criteria to say whether e.g. 'paper' wins against 'rock' rather than a simple 'win'/'lose' statement.
-- Upon incorrect user input, ask for their choice again. 
